@@ -194,7 +194,7 @@
 
 
 
-<p>En el script *******************  añadimos el siguiente código.</p>
+<p>En el script <code>Contact Damager</code> añadimos el siguiente código.</p>
 
 
 
@@ -208,7 +208,7 @@
 
 
 
-<p>En el script *******************  añadimos el siguiente código.</p>
+<p>En el script <code>Life</code> añadimos el siguiente código.</p>
 
 <image
   src="challenge06/corner3.png"
