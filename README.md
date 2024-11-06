@@ -18,9 +18,11 @@
 
 <p> Comenzamos eligiendo un <code>Asset</code> de alguno de los paquetes que importamos para utilizarlo en el piso. A su vez le añadimos un <code>script</code> que se llame <code>floor</code>.</p>
 
+<image
+  src="challenge06/floor.png"
+  width = 60%
+  height = 60%>
 
-
-//foto de floor 
 
 
 
