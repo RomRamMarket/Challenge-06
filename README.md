@@ -166,7 +166,7 @@
 
 
 <image
-  src="challenge06/paredIndex.gif"
+  src="challenge06/paredIndex (1).gif"
   width = 60%
   height = 60%>
 
