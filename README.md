@@ -31,15 +31,21 @@
 <p>Duplicando los prefabs para tener en nuestro cuadrado <code>4x4</code>. Nuestra escena se vería asi:</p>
 
 
-
-//foto de prehecho 
+<image
+  src="challenge06/preHecho.png"
+  width = 60%
+  height = 60%>
 
 
 
 <p>Creamos un <code>Empty object</code> llamado <code>FloorManager</code> y para organizarlos ponemos todos los pisos bajo la jerarquía de este.</p>
 
 
-//foto de floorManager1
+
+<image
+  src="challenge06/floorManager1.png"
+  width = 30%
+  height = 30%>
 
 
 
@@ -47,18 +53,28 @@
 
 <p>También le añadimos un <Code>Script</Code> llamado <code>FloorManager</code>. Más adelante se encuentran las especificidades de este script.</p>
 
-//foto de floorManager2
 
 
+<image
+  src="challenge06/floorManager2.png"
+  width = 60%
+  height = 60%>
 
 
 
 <p>Repetimos un proceso similar, pero con las paredes. Elegimos el prefab del paquete que queremos utilizar para nuestras paredes. Además le añadimos un <code>Script</code> llamado <code>Life</code>. </p>
 
 
-//foto de pared2
+<image
+  src="challenge06/pared2.png"
+  width = 60%
+  height = 60%>
 
-//foto de pared1
+
+  <image
+  src="challenge06/pared1.png"
+  width = 60%
+  height = 60%>
 
 
 
@@ -68,8 +84,10 @@
 
 
 
-
-//foto de pared3.rigid
+<image
+  src="challenge06/pared3.rigid.png"
+  width = 60%
+  height = 60%>
 
 
 
@@ -78,16 +96,21 @@
 <p>Creamos una esfera que será el prefab de nuestra bala del jugador y añadimos los siguientes componenetes.</p>
 
 
-
-//foto de bullet1
+<image
+  src="challenge06/bullet1.png"
+  width = 50%
+  height = 50%>
 
 
 
 
 <p>En el script de <code>Contact Damager</code> realizamos los siguientes cambios.</p>
 
+<image
+  src="challenge06/contactDamager.png"
+  width = 60%
+  height = 60%>
 
-//foto de contact damager
 
 
 
@@ -97,8 +120,10 @@
 
 
 
-
-//foto de floorManager
+<image
+  src="challenge06/floorManger.png"
+  width = 60%
+  height = 60%>
 
 
 
@@ -110,8 +135,10 @@
 <p>Añadimos un método público para eliminar un piso aleatorio de la lista.</p>
 
 
-
-//fto de removeRandomFloor
+<image
+  src="challenge06/removeRandomFloor.png"
+  width = 60%
+  height = 60%>
 
 
 
@@ -122,8 +149,10 @@
 
 
 
-
-//foto de life
+<image
+  src="challenge06/life.png"
+  width = 60%
+  height = 60%>
 
 
 
@@ -136,8 +165,11 @@
 
 
 
+<image
+  src="challenge06/paredIndex.gif"
+  width = 60%
+  height = 60%>
 
-//gif de paredIndex
 
 
 
@@ -146,27 +178,16 @@
 <p>Repetimos en cierta medida el proceso de la pared ahora para que al impactar las esquinas se destruyan todos los pisos.</p>
 <p>Elegimos prefab y añadimos componentes.</p>
 
-
-//foto de corner
-
-
-
-
+<image
+  src="challenge06/corner.png"
+  width = 60%
+  height = 60%>
 
 
 
 
 
 
-
-
-<p>En el script *******************  añadimos el siguiente código.</p>
-
-
-
-
-
-//foto de corner2
 
 
 
@@ -175,12 +196,24 @@
 
 <p>En el script *******************  añadimos el siguiente código.</p>
 
-//foto de corner3
+
+
+
+<image
+  src="challenge06/corner2.png"
+  width = 60%
+  height = 60%>
 
 
 
 
 
+<p>En el script *******************  añadimos el siguiente código.</p>
+
+<image
+  src="challenge06/corner3.png"
+  width = 60%
+  height = 60%>
 
 
 
@@ -188,23 +221,10 @@
 
 <p>En el script llamado <code>Floor Manager</code> añadimos un método para que se eliminen todos los pisos al chocar con una esquina.</p>
 
-
-//foto de floorManager.corner4
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<image
+  src="challenge06/floorManager.corner4.png"
+  width = 60%
+  height = 60%>
 
 
 
