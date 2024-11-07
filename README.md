@@ -226,13 +226,61 @@
   width = 60%
   height = 60%>
 
+<h2>Creando al enemigo</h2>
 
+<p>Creamos el prefab del enemigo con todos sus componentes necesarios.</p>
 
+<img src="img/Enemy1.png" width=80%, height=80%>
 
+<p>Le damos un script al enemigo, llamado <code>Enemy</code>. Note que el <code>EnemyManager</code> aún no ha sido creado, pero no nos preocupemos por esto. ;) </p>
 
+<img src="img/Enemy2.png" width=80%, height=80%>
 
+<p>Añadimos otros scripts necesarios para el enemigo.</p>
 
+<img src="img/Enemy3.png" width=80%, height=80%>
+<img src="img/EnemyBonus.png" width=80% height=80%>
 
+<h2>Manejando la aparición de los enemigos</h2>
 
+<p>Ahora queremos crear los "spawners" de los enemigos para que aparezcan de diferentes posiciones y caminen en direcciones distintas. Además, crearemos un <code>Wave Manager</code> y un <code>Enemy Manager</code> que será importante posteriormente para manejar las condiciones de victoria y pérdida.</p>
+<p>Creamos los "spawners"...</p>
 
+<img src="img/EnemySpawner1.png" width=80% height=80%>
+<img src="img/EnemySpawner2.png" width=80% height=80%>
+<img src="img/EnemySpawner3.png" width=80% height=80%>
+<img src="img/EnemySpawner4.png" width=80% height=80%>
 
+<p>Creamos el <code>Wave Manager</code>...</p>
+
+<img src="img/EnemySpawner5.png" width=80% height=80%>
+
+<p>Asignamos los scripts correspondientes...</p>
+
+<img src="img/EnemySpawner6.png" width=80% height=80%>
+<img src="img/EnemySpawner7.png" width=80% height=80%>
+
+<p>...y creamos el <code>Enemy Manager</code> con su script.</p>
+
+<img src="img/EnemySpawner8.png" width=80% height=80%>
+<img src="img/EnemySpawner9.png" width=80% height=80%>
+
+<h2>"Make it rain!"</h2>
+
+<p>Antes de mostrar el resultado, añadiremos otro toque especial a nuestro juego: ¡lluvia!
+<p>Creamos un prefab que simulará una "gota" que caerá del cielo. Creamos su material y su prefab con las siguientes características:</p>
+
+<img src="img/Rain1.png" width=80% height=80%>
+<img src="img/Rain2.png" width=80% height=80%>
+
+<p>Ahora, la parte más importante es lograr que las gotas de agua aparezcan rápidamente en <bold>distintas</bold> partes del mapa. Para esto, creamos un nuevo objeto vacío al que llamaremos <code>Rain Spawner</code>. Este se encargará de todas las gotas de lluvia.
+
+<img src="img/Rain3.png" width=80% height=80%>
+
+<p>Aquí creamos un script similar al del <code>Spawner</code> de los enemigos, pero con una adición: cada vez que se genera una gota, también se tiene que generar una posición aleatoria en su X y Z que se encuentre dentro del área del campo de batalla. A continuación, hay una implementación bastante simple de esta función:</p>
+
+<img src="img/Rain4.png" width=80% height=80%>
+
+<p>¡Veamos cómo cae la lluvia!</p>
+
+![Rain](img/rain.gif)
