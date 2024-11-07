@@ -121,7 +121,7 @@
 
 
 <image
-  src="challenge06/floorManger.png"
+  src="challenge06/floorManager.png"
   width = 60%
   height = 60%>
 
