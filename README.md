@@ -226,6 +226,37 @@
   width = 60%
   height = 60%>
 
+<h2>Preparando el area</h2>
+<h3>Esquinas</h3>
+<p1>Utilizaremos el prefab ya hecho para las esquinas y lo duplicaremos 3 veces, asi teniendo las 4 esquinas de nuestro terreno. Pondremos cada esquina en donde corresponda y si es necesario hacer alguna rotacion, se hara en el eje Y de la copia de la esquina <code>(Usualmente son  90, 180, -90, -180)</code>.</p1>
+
+<image
+src="Challenge 6/corners.png"
+width = 60%
+height = 60%>
+
+<h3>Paredes</h3>
+<p1>Utilizaremos el prefab ya hecho para las paredes y lo duplicaremos. En este ejercicio, lo duplique unas 7 veces, 2 para cada pared del terreno. Al tener una pared duplicada, vamos a ponerla pegada a la pared del terreno, asi tapandola y sustituyendole como pared nueva: </p1>
+
+<image
+src="Challenge 6/paredes1.png"
+width = 60%
+height = 60%>
+
+<p1>Ya al tener una pared pegada a nuestro terreno, para no utilizar tantas copias de una pared, manualmente se le hizo una transformacion en <code>eje X</code>. De esta manera, una sola pared cubre una mayor distancia y se puede trabajar para conectarla a una de las esquinas un poco mas facil. Se repite este proceso para la segunda pared del lado y se pegan las dos paredes asi cubriendo un solo lado entero: </p1>
+
+<image
+src="Challenge 6/paredes2.png"
+width = 60%
+height = 60%>
+
+<p1>Luego de hacer los 4 lados de nuestro estadio, podemos poner las copias de los prefabs bajo los empty gameobjects<code>Corners</code> y <code>Paredes</code>para que funcionen como deben! </p1>
+
+<image
+src="Challenge 6/final.png"
+width = 60%
+height = 60%>
+
 <h2>Creando al enemigo</h2>
 
 <p>Creamos el prefab del enemigo con todos sus componentes necesarios.</p>
@@ -284,3 +315,37 @@
 <p>¡Veamos cómo cae la lluvia!</p>
 
 ![Rain](img/rain.gif)
+
+<h2>Victoria y Derrota</h2>
+<p1>Para estos dos estados de juego se creo un empty game object bajo <code>Managers</code> llamado<code>GamemodeManager</code>, este se encarga de verificar si el jugador se ha muerto (para display una pantalla de "Derrota" o si el jugador logro eliminar todos los enemigos y todos los waves para una pantalla de Victoria!</p1>
+
+<image
+src="Challenge 6/codigo.png"
+width = 60%
+height = 60%>
+
+<p1>Luego, crearemos una escena vacia llamada "Defeat". Dandole <code>Doble Click</code> a esta escena, cuando entremos, buscaremos donde esta la camara default de Unity dentro de la escena y alfrente de ella crearemos <code>3D Object > Cube</code> que quede frente de la camara. Para esta pantalla de derrota, usamos una herramienta de Inteligencia Artificial (IA) en la internet para que nos genere dos imagenes, una para una pantalla de Derrota y una para Victoria. Cuando las creo y las descarge, les hize <code>Drag & Drop</code> dentro de la carpeta <code>Assets</code> de nuestro proyecto. En esta instancia, luego de tener las imagenes dentro de mi Unity, simplemente les hize <code>Drag & Drop</code> encima del cubo que creamos y automaticamente le puso la imagen creada:</p1>
+
+<image
+src="Challenge 6/gameover1.png"
+width = 60%
+height = 60%>
+
+<p1>Por ultimo, para no tener un empty scene en el fondo detras de la pantalla de derrota, fui dentro de <code>Main Camera > Environment > Background Type</code> y lo cambie a <code>Solid Color</code> para esconder una scena vacia detras de la "pantalla" de derrota: </p1>
+
+<image
+src="Challenge 6/gameover2.png"
+width = 60%
+height = 60%>
+
+<p1>Para terminar, nos faltaria la pantalla de "Victoria". Simplemente le hacemos un <code>CTRL + C & CTRL + V</code> a nuestra escena de Derrota y le cambiamos el nombre a "Win", para saber que esta es la escena de Victoria. Finalmente entraremos a esta escena y para cambiar la imagen del cubo, que debe tener la imagen de una derrota, volvemos a hacer <code>Drag & Drop</code> la imagen creada para la victoria encima del cubo, y cambiamos el color del Background dentro del Main Camera!</p1>
+
+<image
+src="Challenge 6/victory1.png"
+width = 60%
+height = 60%>
+
+<image
+src="Challenge 6/victory2.png"
+width = 60%
+height = 60%> 
